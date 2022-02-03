@@ -34,12 +34,13 @@
 
         destination.querySelector("img").src = dyr.billede;
 
-        const p1 = document.querySelector("p");
+        // leder efter alle p og tager nr 1
+        const p1 = document.querySelector("p:nth-of-type(1)");
         p1.textContent += dyr.type;
         console.log(p1.textContent);
 
-        // denne vitker ikke
-        const p2 = document.querySelector(" p");
+        // leder efter alle p og tager nr 2
+        const p2 = document.querySelector("p:nth-of-type(2)");
         p2.textContent += dyr.levested;
         console.log(p2.textContent);
       });
